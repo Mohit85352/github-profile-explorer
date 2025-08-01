@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Profile Explorer</title>
+  <link rel="stylesheet" href="second.css" />
+</head>
+<body>
+  <div class="branding-banner">
+    <h1>👨‍💻 Welcome to Mohit Bhatt's GitHub Explorer App</h1>
+  </div>
+
+  <div class="container">
+    <input type="text" id="username" placeholder="Enter GitHub username..." />
+    <button onclick="getUser()">Search</button>
+
+    <div id="loader" class="hidden">
+      <p>Loading...</p>
+    </div>
+
+    <div id="profile" class="card"></div>
+
+    <input type="text" id="repo-search" placeholder="Search repositories..." onkeyup="filterRepos()" class="hidden"/>
+    <div id="repos" class="repo-list"></div>
+  </div>
+
+  <footer class="footer">
+    <p>Made with ❤️ by Mohit Bhatt</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
